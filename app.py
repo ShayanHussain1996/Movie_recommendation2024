@@ -24,7 +24,7 @@ template = PromptTemplate(
 
 
 # Google Gemini Model
-llm = ChatGoogleGenerativeAI(model="gemini-pro",api_key='GOOGLE-API-KEY')
+llm = ChatGoogleGenerativeAI(model="gemini-pro",api_key=os.getenv("GOOGLE-API-KEY"))
 
 
 if user_input:
